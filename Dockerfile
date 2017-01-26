@@ -10,3 +10,5 @@ RUN mkdir /etc/nginx/sites-enabled
 # copy our sites configuration
 ADD sites-enabled/s3-proxy.conf /etc/nginx/sites-enabled/s3-proxy.conf
 
+ENV S3_BUCKET YourBucket.s3-website-us-east-1.amazonaws.com
+
